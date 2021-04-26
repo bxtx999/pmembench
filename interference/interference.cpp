@@ -5,10 +5,10 @@
 // -------------------------------------------------------------------------------------
 using namespace std;
 // -------------------------------------------------------------------------------------
-ub8 PAGE_FLUSH_PAGE_COUNT = 125000;
-ub8 LOG_BYTE_COUNT = 2e9;
-ub8 SEQ_READER_BYTE_COUNT = 20e9;
-ub8 RND_READER_BYTE_COUNT = 2e9;
+ub8 PAGE_FLUSH_PAGE_COUNT = 93750;
+ub8 LOG_BYTE_COUNT = 1.5e9;
+ub8 SEQ_READER_BYTE_COUNT = 15e9;
+ub8 RND_READER_BYTE_COUNT = 1.5e9;
 // -------------------------------------------------------------------------------------
 ub4 SEQ_RAM_THREADS = 0;
 ub4 SEQ_NVM_THREADS = 0;
