@@ -83,7 +83,7 @@ public:
          return {};
       }
 
-      experimental::suspend_always final_suspend()
+      experimental::suspend_always final_suspend() noexcept
       {
          return {};
       }

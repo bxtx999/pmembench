@@ -5,5 +5,7 @@
 
 echo "" > results/logging.txt
 
-clang++ -g0 -O3 -DNDEBUG=1 -march=native -std=c++17 logging/logging.cpp -Invml/src/include/ nvml/src/nondebug/libpmem.a nvml/src/nondebug/libpmemlog.a -lpthread -lndctl -ldaxctl \
+export PMDK=/home/aim/hjn/pmdk
+
+clang++ -g0 -O3 -DNDEBUG=1 -march=native -std=c++17 logging/logging.cpp -I${PMDK}/src/include/ ${PMDK}/src/nondebug/libpmem.a ${PMDK}/src/nondebug/libpmemlog.a -lpthread -lndctl -ldaxctl \
 && ./a.out 56 512 10e9 5 ${PMEM_PATH}/file 0 | tee -a results/logging.txt
