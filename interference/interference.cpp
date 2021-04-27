@@ -6,9 +6,9 @@
 using namespace std;
 // -------------------------------------------------------------------------------------
 ub8 PAGE_FLUSH_PAGE_COUNT = 62055;
-ub8 LOG_BYTE_COUNT = 2.6e9;
-ub8 SEQ_READER_BYTE_COUNT = 2.6e10;
-ub8 RND_READER_BYTE_COUNT = 2.6e9;
+ub8 LOG_BYTE_COUNT = 2.6e8;
+ub8 SEQ_READER_BYTE_COUNT = 2.6e9;
+ub8 RND_READER_BYTE_COUNT = 2.6e8;
 // -------------------------------------------------------------------------------------
 ub4 SEQ_RAM_THREADS = 0;
 ub4 SEQ_NVM_THREADS = 0;
